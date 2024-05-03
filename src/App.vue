@@ -4,6 +4,12 @@ import { RouterView } from 'vue-router'
 
 <template>
   <div>111</div>
+  <el-button type="primary">1</el-button>
+  <el-button type="danger">2</el-button>
+  <Edit style="width: 1em; height: 1em; margin-right: 8px" />
+    <Share style="width: 1em; height: 1em; margin-right: 8px" />
+    <Delete style="width: 1em; height: 1em; margin-right: 8px" />
+    <Search style="width: 1em; height: 1em; margin-right: 8px" />
   <RouterView />
 </template>
 
