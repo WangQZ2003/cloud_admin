@@ -1,18 +1,31 @@
-<script setup lang="ts">
+<!-- <script setup lang="ts">
 import { RouterView } from 'vue-router' 
+import {test} from "./api/test"
+
+const hand= async ()=>{
+  // const res = await axios.request({
+  //   url:"https://mock.mengxuegu.com/mock/6638c421cab9671f88bd3159/v/focus",
+  //   method:"GET"
+  // });
+  // console.log("Res==>",res);
+  
+  const res = await test();
+  console.log(res);
+}
 
 
 // import { h } from "vue"
 
 // // type props  children
 // const vnode = h("div", { class: "test" }, ["8888", h("span", "45621")])
+
 </script>
 
-<template>
+<!-- <template> -->
 
   <!-- <vnode></vnode> -->
 
-  <SvgIcon icon="Edit" size="20" color="red"/>
+  <!-- <SvgIcon icon="Edit" size="20" color="red" @click="hand"/> -->
 
   <!-- 
   <div>111</div>
@@ -38,9 +51,21 @@ import { RouterView } from 'vue-router'
 
 <svg-icon icon="elid" size="" color=""></svg-icon> -->
 
+  <!-- <RouterView />
+</template> -->
+
+<!-- <style scoped lang="scss">
+
+</style> --> -->
+
+
+
+<script setup lang="ts">
+import { RouterView } from "vue-router";
+</script>
+
+<template>
   <RouterView />
 </template>
 
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>
