@@ -19,7 +19,7 @@ const dynamicRoutes: RouteRecordRaw[] = [
           // 面包屑显示的内容
           title: "首页",
           // 菜单图标
-          icon: "Menu",
+          icon: "HomeFilled",
           // 页面是否需要缓存 false为不缓存 true缓存
           cache: false,
           // 控制当前是否显示为菜单 false 为显示 true 为不显示
@@ -34,7 +34,7 @@ const dynamicRoutes: RouteRecordRaw[] = [
           // 面包屑显示的内容
           title: "系统管理",
           // 菜单图标
-          icon: "Menu",
+          icon: "Setting",
         },
         children: [
           {
@@ -60,7 +60,7 @@ const dynamicRoutes: RouteRecordRaw[] = [
               // 面包屑显示的内容
               title: "角色管理",
               // 菜单图标
-              icon: "Menu",
+              icon: "IceCream",
               // 页面是否需要缓存 false为不缓存 true缓存
               cache: false,
               // 控制当前是否显示为菜单 false 为显示 true 为不显示
@@ -75,7 +75,7 @@ const dynamicRoutes: RouteRecordRaw[] = [
               // 面包屑显示的内容
               title: "用户管理",
               // 菜单图标
-              icon: "Menu",
+              icon: "User",
               // 页面是否需要缓存 false为不缓存 true缓存
               cache: false,
               // 控制当前是否显示为菜单 false 为显示 true 为不显示
@@ -92,7 +92,7 @@ const dynamicRoutes: RouteRecordRaw[] = [
           // 面包屑显示的内容
           title: "商品管理",
           // 菜单图标
-          icon: "Menu",
+          icon: "Goods",
         },
         children: [
           {
@@ -100,8 +100,8 @@ const dynamicRoutes: RouteRecordRaw[] = [
             component: () => import("@/views/goods/list/index.vue"),
             name: "GoodsList",
             meta: {
-              title: "商品管理",
-              icon: "Menu",
+              title: "商品列表",
+              icon: "GoodsFilled",
               cache: false,
               hidden: false,
             },
@@ -111,8 +111,8 @@ const dynamicRoutes: RouteRecordRaw[] = [
             component: () => import("@/views/goods/category/index.vue"),
             name: "GoodsCategory",
             meta: {
-              title: "商品管理",
-              icon: "Menu",
+              title: "商品分类",
+              icon: "Operation",
               cache: false,
               hidden: false,
             },
@@ -125,7 +125,7 @@ const dynamicRoutes: RouteRecordRaw[] = [
         component: () => import("@/views/link/index.vue"),
         meta: {
           title: "积云教育",
-          icon: "Menu",
+          icon: "Link",
           cache: false,
           hidden: false,
         },
@@ -136,7 +136,7 @@ const dynamicRoutes: RouteRecordRaw[] = [
         component: () => import("@/views/error/401.vue"),
         meta: {
           title: "401页面",
-          icon: "Menu",
+          icon: "warning",
           cache: true,
           hidden: true,
         },
